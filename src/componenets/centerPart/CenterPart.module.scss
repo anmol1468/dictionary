@@ -1,0 +1,51 @@
+@import '../../utilities.scss';
+
+.centre {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid rgba(160, 158, 158, 0.3);
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-basis: 100%;
+    border: 2px var(--text-color) solid;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    margin: 1rem 0;
+
+
+    input {
+      border: none;
+      width: calc(100% - 2rem);
+      outline: none;
+      font-size: 1.1rem;
+      background-color: var(--bg-color);
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .display {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    line-height: 0;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 2.25rem;
+    }
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      color: var(--primary-color);
+    }
+  }
+}
